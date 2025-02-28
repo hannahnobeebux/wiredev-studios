@@ -1,24 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    public Button startButton;
-    public Button quitButton;
-
-    void Start()
+    public void StartGame()
     {
-        startButton.onClick.AddListener(StartGame);
-        quitButton.onClick.AddListener(QuitGame);
+        Debug.Log("Start Button Clicked! Loading GameRoom...");
+        SceneManager.LoadScene("GameRoom"); // Ensure the correct scene name
     }
 
-    void StartGame()
-    {
-        SceneManager.LoadScene("GameScene"); // Make sure to create this scene later
-    }
-
-    void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
