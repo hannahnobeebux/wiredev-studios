@@ -1,0 +1,9 @@
+# Ignore Unity auto-generated files
+Library/
+Logs/
+Temp/
+*.csproj
+*.unityproj
+*.sln
+*.userprefs
+
