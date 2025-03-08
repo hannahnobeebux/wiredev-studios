@@ -10,11 +10,11 @@ public class SceneLoader : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Keep this object across scenes
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
-            Destroy(gameObject); // Prevent duplicates
+            Destroy(gameObject); 
         }
     }
 

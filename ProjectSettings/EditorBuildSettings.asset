@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuizScene.unity
     guid: 3b937ae544f7d41d39a68885eece9396
+  - enabled: 1
+    path: Assets/Scenes/PRInfoScene.unity
+    guid: 4d38207eb538d4a21b47641ded408bed
+  - enabled: 1
+    path: Assets/Scenes/PRQuizScene.unity
+    guid: 630b41e47068a484eb7b9b39bc482ddc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

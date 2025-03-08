@@ -3,11 +3,11 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class QuizManager : MonoBehaviour
+public class PRQuizManager : MonoBehaviour
 {
     public Button answer1, answer2, answer3, answer4, submitButton;
     private string selectedAnswer;
-    private string correctAnswer = "Improves readability";
+    private string correctAnswer = "Create a new branch and make changes";
 
     public GameObject winPanel; 
     public GameObject losePanel; 

@@ -8,22 +8,8 @@ public class PlayerController : MonoBehaviour
 
     private float rotationX = 0f;
 
-    void Start()
-    {
-        // Lock and hide cursor when game starts
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
     void Update()
     {
-        // Toggle cursor visibility when pressing Escape
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-
         // Player movement
         float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float moveZ = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
