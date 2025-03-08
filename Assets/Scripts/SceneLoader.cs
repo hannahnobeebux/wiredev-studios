@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -11,42 +10,35 @@ public class SceneLoader : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
-            Debug.Log("✅ SceneLoader Initialized - Persisting across scenes.");
+            DontDestroyOnLoad(gameObject); // Keep this object across scenes
         }
         else
         {
-            Debug.Log("❌ Duplicate SceneLoader detected, destroying extra instance.");
-            Destroy(gameObject);
-            return;
+            Destroy(gameObject); // Prevent duplicates
         }
     }
 
-    void Start()
+    public void LoadScene(string sceneName)
     {
-        // Try to assign the Quiz Button dynamically in InfoScene
-        AssignQuizButton();
-    }
-
-    void AssignQuizButton()
-    {
-        Button quizButton = GameObject.Find("Quiz Button")?.GetComponent<Button>();
-        if (quizButton != null)
-        {
-            Debug.Log("🎯 Quiz Button Found! Assigning function...");
-            quizButton.onClick.RemoveAllListeners(); // Remove any old references
-            quizButton.onClick.AddListener(LoadQuizScene);
-        }
-        else
-        {
-            Debug.Log("⚠️ Quiz Button Not Found in this scene.");
-        }
+        Debug.Log("Loading Scene: " + sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void LoadQuizScene()
     {
-        Debug.Log("📌 Quiz Button Clicked! Loading QuizScene...");
+        Debug.Log("Loading QuizScene...");
         SceneManager.LoadScene("QuizScene");
     }
-}
 
+    public void LoadGameRoom()
+    {
+        Debug.Log("Loading GameRoom...");
+        SceneManager.LoadScene("GameRoom");
+    }
+
+    public void LoadInfoScene()
+    {
+        Debug.Log("Loading InfoScene...");
+        SceneManager.LoadScene("InfoScene");
+    }
+}
