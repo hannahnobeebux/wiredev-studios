@@ -7,10 +7,10 @@ public class QuizManager : MonoBehaviour
 {
     public Button answer1, answer2, answer3, answer4, submitButton;
     private string selectedAnswer;
-    private string correctAnswer = "Improves readability";
+    private string correctAnswer = "Single Responsibility Principle (SRP)";
 
-    public GameObject winPanel;  // Reference for Win Panel
-    public GameObject losePanel; // Reference for Lose Panel
+    public GameObject winPanel; 
+    public GameObject losePanel; 
 
     void Start()
     {
@@ -36,23 +36,23 @@ public class QuizManager : MonoBehaviour
         if (trimmedSelected.Equals(trimmedCorrect, System.StringComparison.OrdinalIgnoreCase))
         {
             Debug.Log("Correct! Loading Win Panel...");
-            winPanel.SetActive(true);  // Show Win Panel
-            losePanel.SetActive(false); // Hide Lose Panel
+            winPanel.SetActive(true); 
+            losePanel.SetActive(false);
             Invoke("LoadNextQuestion", 2f);
         }
         else
         {
             Debug.Log("Incorrect! Loading Lose Panel...");
-            losePanel.SetActive(true);  // Show Lose Panel
-            winPanel.SetActive(false); // Hide Win Panel
+            losePanel.SetActive(true); 
+            winPanel.SetActive(false);
         }
     }
 
     public void ResetQuiz()
     {
-        Debug.Log("🔄 Resetting quiz for another attempt.");
-        selectedAnswer = ""; // Clear previous selection
-        losePanel.SetActive(false); // Hide LosePanel
+        Debug.Log("Resetting quiz for another attempt.");
+        selectedAnswer = "";
+        losePanel.SetActive(false);
     }
 
 }

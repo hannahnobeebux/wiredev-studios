@@ -4,7 +4,7 @@ Introducing VodaDev Trivia – a gamified approach to helping new joiners who ar
 ## Why use this application?
 Currently, when a new joiner starts in their team, it can be overwhelming trying to get up to speed with the hundreds of Wiki documents available. This game is aimed at Apprentices and Junior SWE's with an exciting way to develop their technical skills! 
 
-## How to run the application?
+## How to run the application in "development mode"?
 1. Clone this repository 
 2. Follow the instructions from the official [Unity Documentation](https://unity.com/download)
 3. Install Unity Hub for your computer 

@@ -1,9 +1,10 @@
 using UnityEngine;
 
+// PURPOSE: to help the player navigate to another scene from GameRoom to the information scene
 public class InfoPanelManager : MonoBehaviour
 {
     public GameObject infoPanel;
-    public Transform teleportLocation; // New: Set this in the Inspector
+    public Transform teleportLocation; 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,7 +23,6 @@ public class InfoPanelManager : MonoBehaviour
             infoPanel.SetActive(true);
             Debug.Log("InfoPanel should now be active: " + infoPanel.activeSelf);
 
-            // Move the player to the teleport location
             if (teleportLocation != null)
             {
                 other.transform.position = teleportLocation.position;
