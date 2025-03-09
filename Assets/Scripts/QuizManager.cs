@@ -7,7 +7,7 @@ public class QuizManager : MonoBehaviour
 {
     public Button answer1, answer2, answer3, answer4, submitButton;
     private string selectedAnswer;
-    private string correctAnswer = "Improves readability";
+    private string correctAnswer = "Single Responsibility Principle (SRP)";
 
     public GameObject winPanel; 
     public GameObject losePanel; 
