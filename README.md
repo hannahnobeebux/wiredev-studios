@@ -12,10 +12,10 @@ Currently, when a new joiner starts in their team, it can be overwhelming trying
 4. Double-click `vodadev-trivia-v1.exe` to start the game
 
 ### Mac
-1. **macOS Installation .zip file **: [Click to Download](https://github.com/hannahnobeebux/wiredev-studios/raw/refs/heads/main/Builds/vodadev_trivia-macos.zip)
+1. **macOS Installation .zip file**: [Click to Download](https://github.com/hannahnobeebux/wiredev-studios/raw/refs/heads/main/Builds/vodadev_trivia-macos.zip)
 2. Extract `vodadev_trivia-macos.zip`
 3. Open `vodadev_trivia-macos.app`
-4. If you see a security warning, go to **System Preferences > Security & Privacy > Allow the app**.
+4. If you see a security warning, go to **System Preferences > Privacy & Security > Allow the app**.
 
 
 ## How to run the application in Unity Hub
